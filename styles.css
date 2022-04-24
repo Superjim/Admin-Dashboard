@@ -23,6 +23,7 @@ body {
     ;
     grid-template-rows: 1fr, 4fr;
     grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    background-color: var(--background-colour);
 }
 
 .dashboard {
@@ -70,6 +71,8 @@ body {
     grid-area: navbar;
     padding: 1rem 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: var(--text-secondary);
+    max-height: 10rem;
 
 }
 
@@ -94,6 +97,7 @@ body {
     height: 1.5rem;
     width: 40vw;
     margin-left: 1rem;
+    margin-right: 1rem;
     outline: 0;
     background-color: var(--background-colour)
 
@@ -101,13 +105,32 @@ body {
 
 /* Github avatar */
 
-.github-avatar {
-    background: var(--github-avatar) center center / cover no-repeat;
+.github-avatar, .github-avatar-2, .github-avatar-3, .github-avatar-4 {
     border-radius: 50%;
     margin-left: 1rem;
     margin-right: 1rem;
     height: 2.5rem;
     width: 2.5rem;
+}
+
+.github-avatar {
+    background: var(--github-avatar) center center / cover no-repeat;
+
+}
+
+.github-avatar-2 {
+    background: var(--github-avatar-2) center center / cover no-repeat;
+
+}
+
+.github-avatar-3 {
+    background: var(--github-avatar-3) center center / cover no-repeat;
+
+}
+
+.github-avatar-4 {
+    background: var(--github-avatar-4) center center / cover no-repeat;
+
 }
 
 .content {
@@ -166,19 +189,109 @@ body {
   vertical-align: middle;
 }
 
-.button-18:hover,
-.button-18:focus { 
+.button-container > *:hover { 
   background-color: #16437E;
-  color: #ffffff;
 }
 
-.button-18:active {
-  background: #09223b;
-  color: rgb(255, 255, 255, .7);
+.content {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-areas: 
+    "project announcements"
+    "project trending";
+    grid-gap: 1rem;
+    padding: 1rem;
+    height: max-content;
+
+} 
+
+.content .projects > h3, .content .announcements > h3, .trending > h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    grid-column: 1 /-1;
+
+  }
+
+.projects {
+    grid-area: project;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;     
+    
 }
 
-.button-18:disabled { 
-  cursor: not-allowed;
-  background: rgba(0, 0, 0, .08);
-  color: rgba(0, 0, 0, .3);
+.project-container {
+    background-color: var(--text-secondary);
+    border-radius: 0.5rem;
+    border-left: var(--content-highlight) 0.5rem solid;
+}
+
+.project-container > .container { 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.project-container > .container > .container-heading{
+    margin-top: 1rem;
+    font-weight: 600;
+    
+}
+
+.project-container > .container > .container-text{
+    color: grey;
+}
+
+.project-container > .container > .container-icons{
+    margin-left: auto;
+    font-size: 1.2rem;
+    margin-right: 0;
+}
+
+.project-container > .container > .container-icons > * {
+    margin-left: 1rem;
+}
+
+.announcements{
+    grid-area: announcements;
+    gap: 1rem;
+}
+
+.announcement-container {
+    background-color: var(--text-secondary);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.announcement-container > .container > h4 {
+    font-weight: 600;
+}
+
+.announcement-container > .container > p {
+    color: grey;
+}
+
+.trending {
+    grid-area: trending;
+    gap: 1rem;  
+}
+
+
+.trending-container {
+    background-color: var(--text-secondary);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+
+}
+
+
+
+p.container-text {
+    font-weight: 400;
 }
