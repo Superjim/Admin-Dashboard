@@ -1,0 +1,53 @@
+:root {
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    --text-primary: black;
+    --text-secondary: white;
+    --transition-speed: 0.5s;
+    --dashboard-colour: #0EA5E9;
+    --background-colour: #CBD5E1;
+    --content-highlight: #F59E0B;
+    --dashboard-width: clamp(200px, 25vw, 350px);
+    --github-avatar: url("https://github.com/Superjim.png");
+    --github-avatar-2: url("https://github.com/hmjatt.png");
+    --github-avatar-3: url("https://github.com/IlyaEru.png");
+    --github-avatar-4: url("https://github.com/deanwagner.png");
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "dashboard navbar navbar navbar"
+    "dashboard conten conten conten"
+    ;
+    grid-template-rows: 1fr, 4fr;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+}
+
+.dashboard {
+    grid-area: dashboard;
+    background-color: var(--dashboard-colour);
+    width: 15rem;
+    overflow: hidden;
+    
+}
+
+.item {
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.content {
+    grid-area: conten;
+}
+
