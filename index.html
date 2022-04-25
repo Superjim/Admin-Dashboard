@@ -1,249 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a225139142.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a225139142.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Admin Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- dashboard on left-->
     <div class="dashboard">
-        <div class="dashboard item">
-            <i class="fa-solid fa-archway"></i>
-            <h2>Dashboard</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-house"></i>
-            <h2>Home</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-address-card"></i>
-            <h2>Profile</h2>
-        </div>
-        <div class="item">
-            <i class="fa-regular fa-message"></i>
-            <h2>Messages</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <h2>History</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-list-check"></i>
-            <h2>Tasks</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-people-group"></i>
-            <h2>Communities</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-gear"></i>
-            <h2>Settings</h2>
-        </div>
-        <div class="item">
-            <i class="fa-regular fa-circle-question"></i>
-            <h2>Support</h2>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-shield-halved"></i>
-            <h2>Privacy</h2>
-        </div>
+      <div class="dashboard item">
+        <i class="fa-solid fa-archway"></i>
+        <h2>Dashboard</h2>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-house"></i>
+        <h2>Home</h2>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-address-card"></i>
+        <h2>Profile</h2>
+      </div>
+      <div class="item">
+        <i class="fa-regular fa-message"></i>
+        <h2>Messages</h2>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <h2>History</h2>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-list-check"></i>
+        <h2>Tasks</h2>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-people-group"></i>
+        <h2>Communities</h2>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-gear"></i>
+        <h2>Settings</h2>
+      </div>
+      <div class="item">
+        <i class="fa-regular fa-circle-question"></i>
+        <h2>Support</h2>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h2>Privacy</h2>
+      </div>
     </div>
     <!-- navbar at top -->
     <div class="navbar">
-
-        <!-- top half, search, alerts, profile, name-->
-        <div class="top-navbar">
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="searchbar">
-            </div>
-            <div class="alerts">
-                <i class="fa-regular fa-bell"></i>
-                <div class="github-avatar"></div>
-                <p class="name">Superjim</p>
-            </div>
+      <!-- top half, search, alerts, profile, name-->
+      <div class="top-navbar">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchbar" />
         </div>
-
-        <!-- bottom half, profile, greeting, name, @user, buttons -->
-        <div class="bottom-navbar">
-            <div class="user">
-                <div class="github-avatar"></div>
-                <div class="user-profile">
-                    <p class="greeting">Hello there,</p>
-                    <p class="name">Jim <span class="username">(@Superjim)</span></p>
-                </div>
-            </div>
-            <div class="button-container">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
+        <div class="alerts">
+          <i class="fa-regular fa-bell"></i>
+          <div class="github-avatar"></div>
+          <p class="name">Superjim</p>
         </div>
+      </div>
+
+      <!-- bottom half, profile, greeting, name, @user, buttons -->
+      <div class="bottom-navbar">
+        <div class="user">
+          <div class="github-avatar"></div>
+          <div class="user-profile">
+            <p class="greeting">Hello there,</p>
+            <p class="name">Jim <span class="username">(@Superjim)</span></p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
     </div>
 
     <!-- content, projects in seperate containers, announcements, trending -->
     <main class="content">
-        <div class="projects">
-            <h3>Your Projects</h3>
-            <!-- Container 1 -->
-            <div class="project-container">
-                <div class="container">
-                    <h4 class="container-heading">Super Cool Project</h4>
-                    <p class="container-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi. 
-                        Illo ea, veniam exercitationem non quae alias aspernatur totam impedit commodi, 
-                    </p>
-                    <div class="container-icons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
-                </div>
+      <div class="projects">
+        <h3>Your Projects</h3>
+        <!-- Container 1 -->
+        <div class="project-container">
+          <div class="container">
+            <h4 class="container-heading">Super Cool Project</h4>
+            <p class="container-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              eligendi. Illo ea, veniam exercitationem non quae alias aspernatur
+              totam impedit commodi,
+            </p>
+            <div class="container-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-code-branch"></i>
             </div>
-            <!-- Container 2 -->
-            <div class="project-container">
-                <div class="container">
-                    <h4 class="container-heading">Less Cool Project</h4>
-                    <p class="container-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi. 
-                        Illo ea, veniam exercitationem non quae alias aspernatur totam impedit commodi, 
-                    </p>
-                    <div class="container-icons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Container 3 -->
-            <div class="project-container">
-                <div class="container">
-                    <h4 class="container-heading">Impossible App</h4>
-                    <p class="container-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi. 
-                        Illo ea, veniam exercitationem non quae alias aspernatur totam impedit commodi, 
-                    </p>
-                    <div class="container-icons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Container 4 -->
-            <div class="project-container">
-                <div class="container">
-                    <h4 class="container-heading">Easy Peasy App</h4>
-                    <p class="container-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi. 
-                        Illo ea, veniam exercitationem non quae alias aspernatur totam impedit commodi, 
-                    </p>
-                    <div class="container-icons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Container 5 -->
-            <div class="project-container">
-                <div class="container">
-                    <h4 class="container-heading">Ad Blocker</h4>
-                    <p class="container-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi. 
-                        Illo ea, veniam exercitationem non quae alias aspernatur totam impedit commodi, 
-                    </p>
-                    <div class="container-icons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Container 6 -->
-            <div class="project-container">
-                <div class="container">
-                    <h4 class="container-heading">Money Maker</h4>
-                    <p class="container-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi. 
-                        Illo ea, veniam exercitationem non quae alias aspernatur totam impedit commodi, 
-                    </p>
-                    <div class="container-icons">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
-                </div>
-            </div>            
+          </div>
         </div>
-        <!-- Announcements -->
-        <div class="announcements">
-            <h3>Announcements</h3>
-            <div class="announcement-container">
-                <div class="container">
-                <h4>Site Maintenance</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <hr>
-                <h4>Community Share Day</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <hr>
-                <h4>Updated Privacy Policy</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <!-- Container 2 -->
+        <div class="project-container">
+          <div class="container">
+            <h4 class="container-heading">Less Cool Project</h4>
+            <p class="container-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              eligendi. Illo ea, veniam exercitationem non quae alias aspernatur
+              totam impedit commodi,
+            </p>
+            <div class="container-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-code-branch"></i>
             </div>
+          </div>
+        </div>
+        <!-- Container 3 -->
+        <div class="project-container">
+          <div class="container">
+            <h4 class="container-heading">Impossible App</h4>
+            <p class="container-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              eligendi. Illo ea, veniam exercitationem non quae alias aspernatur
+              totam impedit commodi,
+            </p>
+            <div class="container-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-code-branch"></i>
             </div>
+          </div>
         </div>
-
-        <!-- Trending -->
-        <div class="trending">
-            <h3>Trending</h3>
-
-            <div class="trending-container">
-                <div class="container">
-
-                        <div class="github-avatar-2"></div>
-                        <div class="name-container">
-                        <p class="username">@tegan</p>
-                        <p class="container-text">World Peace Builder</p>
-                    </div>
-                    </div>  
-                    <div class="container">
-
-
-                        <div class="github-avatar"></div>
-                        <div class="name-container">
-
-                        <p class="username">@morgan</p>
-                        <p class="container-text">Super Cool Project</p>
-                    </div>  
-                </div>
-
-                    <div class="container">
-
-                        <div class="github-avatar-3"></div>
-                        <div class="name-container">
-
-                        <p class="username">@kendall</p>
-                        <p class="container-text">Life Changing App</p> 
-                    </div>
-                </div>  
-                        <div class="container">
-
-
-                        <div class="github-avatar-4"></div>
-                        <div class="name-container">
-
-                        <p class="username">@alex</p>
-                        <p class="container-text">No Traffic Maker</p>
-                        </div>
-                    </div>
-
-                </div>
+        <!-- Container 4 -->
+        <div class="project-container">
+          <div class="container">
+            <h4 class="container-heading">Easy Peasy App</h4>
+            <p class="container-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              eligendi. Illo ea, veniam exercitationem non quae alias aspernatur
+              totam impedit commodi,
+            </p>
+            <div class="container-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+          </div>
         </div>
+        <!-- Container 5 -->
+        <div class="project-container">
+          <div class="container">
+            <h4 class="container-heading">Ad Blocker</h4>
+            <p class="container-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              eligendi. Illo ea, veniam exercitationem non quae alias aspernatur
+              totam impedit commodi,
+            </p>
+            <div class="container-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Container 6 -->
+        <div class="project-container">
+          <div class="container">
+            <h4 class="container-heading">Money Maker</h4>
+            <p class="container-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              eligendi. Illo ea, veniam exercitationem non quae alias aspernatur
+              totam impedit commodi,
+            </p>
+            <div class="container-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Announcements -->
+      <div class="announcements">
+        <h3>Announcements</h3>
+        <div class="announcement-container">
+          <div class="container">
+            <h4>Site Maintenance</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr />
+            <h4>Community Share Day</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr />
+            <h4>Updated Privacy Policy</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trending -->
+      <div class="trending">
+        <h3>Trending</h3>
+
+        <div class="trending-container">
+          <div class="container">
+            <div class="github-avatar-2"></div>
+            <div class="name-container">
+              <p class="username">@tegan</p>
+              <p class="container-text">World Peace Builder</p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="github-avatar"></div>
+            <div class="name-container">
+              <p class="username">@morgan</p>
+              <p class="container-text">Super Cool Project</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="github-avatar-3"></div>
+            <div class="name-container">
+              <p class="username">@kendall</p>
+              <p class="container-text">Life Changing App</p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="github-avatar-4"></div>
+            <div class="name-container">
+              <p class="username">@alex</p>
+              <p class="container-text">No Traffic Maker</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
