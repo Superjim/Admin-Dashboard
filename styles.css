@@ -278,7 +278,8 @@ body {
 
 .trending {
     grid-area: trending;
-    gap: 1rem;
+
+      
 }
 
 
@@ -287,13 +288,24 @@ body {
     border-radius: 0.5rem;
     padding: 1rem;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.trending-container > .container {
+    display: flex;
+    padding: 1rem;
+
+}
+
+.trending-container [class*="github"] {
+    grid-area: github;
+    margin: 0;
+    padding: 0;
+
 }
 
 p.username {
-    grid-area: user;
-    font-weight: 600;
-}
-
-p.container-text {
-    grid-area: project;
+    font-weight: 600;    
 }
