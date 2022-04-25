@@ -299,6 +299,10 @@ body {
 
 }
 
+.name-container {
+    padding-left: 1rem;
+}
+
 .trending-container [class*="github"] {
     grid-area: github;
     margin: 0;
