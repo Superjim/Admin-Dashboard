@@ -278,7 +278,7 @@ body {
 
 .trending {
     grid-area: trending;
-    gap: 1rem;  
+    gap: 1rem;
 }
 
 
@@ -287,11 +287,13 @@ body {
     border-radius: 0.5rem;
     padding: 1rem;
     margin-top: 1rem;
-
 }
 
-
+p.username {
+    grid-area: user;
+    font-weight: 600;
+}
 
 p.container-text {
-    font-weight: 400;
+    grid-area: project;
 }
